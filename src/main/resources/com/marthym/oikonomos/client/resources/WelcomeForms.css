@@ -1,0 +1,13 @@
+.login, 
+.register {
+	width: 280px;
+	margin: 200px auto 25px;
+	background: white;
+	border-radius: 3px;
+	box-shadow: 0 0 10px rgba(0,0,0, .4); 
+	text-align: center;
+	padding-top: 1px;
+    padding-bottom: 15px;
+}
+
+.error {margin-top:0px;}

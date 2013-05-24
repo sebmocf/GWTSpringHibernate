@@ -1,0 +1,16 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:nomos="urn:import:com.marthym.oikonomos.client.components"
+	xmlns:w="urn:import:com.google.gwt.widget.client">
+	<g:DockLayoutPanel unit="PX">
+		<g:north size="36">
+			<nomos:AnonymousNavigationBar ui:field="navigationBar"/>
+		</g:north>
+		<g:center>
+			<g:DeckLayoutPanel ui:field="deck">
+				<nomos:ConnectionForm />
+				<nomos:RegisterForm />
+			</g:DeckLayoutPanel>
+		</g:center>
+	</g:DockLayoutPanel>
+</ui:UiBinder> 

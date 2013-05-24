@@ -1,0 +1,13 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+    
+	<ui:with type="com.marthym.oikonomos.client.resources.AnonymousNavigationBarRessource" field="res" />
+	<ui:with type="com.marthym.oikonomos.client.i18n.OikonomosConstants" field="constants" />
+	
+	<g:HTMLPanel height="36" styleName="{res.style.navAnonymous}">
+		<g:InlineHyperlink text="{constants.login}" targetHistoryToken="newHistoryToken" ui:field="linkConnect"/>
+		<g:InlineHTML> | </g:InlineHTML>
+		<g:InlineHyperlink text="{constants.register}" targetHistoryToken="newHistoryToken" ui:field="linkRegister"/>
+	</g:HTMLPanel>
+</ui:UiBinder> 

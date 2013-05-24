@@ -1,0 +1,92 @@
+/** Add css rules here for your application. */
+html, body {margin:0;padding:0;font-family: Helvetica;}
+
+
+/** Example rules used by the template application (remove for your app) */
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #777777;
+  margin: 40px 0px 70px;
+  text-align: center;
+}
+
+h2 {color:#a6a6a6;}
+
+/** Most GWT widgets already have a style name defined */
+.gwt-DialogBox {
+  width: 400px;
+}
+
+.dialogVPanel {
+  margin: 5px;
+}
+
+.serverResponseLabelError {
+  color: red;
+}
+
+/** Set ids using widget.getElement().setId("idOfElement") */
+#closeButton {
+  margin: 15px 6px 6px;
+}
+
+.gwt-Button {																				/* Submit button */
+	border-radius: 3px;
+	border: 1px solid #336895;
+	box-shadow: inset 0 1px 0 #8dc2f0;
+	width: 242px;
+	height: 40px;
+	margin-top: 20px;
+	
+	background: linear-gradient(bottom, #4889C2 0%, #5BA7E9 100%);
+	background: -o-linear-gradient(bottom, #4889C2 0%, #5BA7E9 100%);
+	background: -moz-linear-gradient(bottom, #4889C2 0%, #5BA7E9 100%);
+	background: -webkit-linear-gradient(bottom, #4889C2 0%, #5BA7E9 100%);
+	background: -ms-linear-gradient(bottom, #4889C2 0%, #5BA7E9 100%);
+	
+	cursor: pointer;
+	color: white;
+	font-weight: bold;
+	text-shadow: 0 -1px 0 #336895;
+	
+	font-size: 13px;
+}
+
+.gwt-Button:hover {
+	background: linear-gradient(bottom, #5c96c9 0%, #6bafea 100%);
+	background: -o-linear-gradient(bottom, #5c96c9 0%, #6bafea 100%);
+	background: -moz-linear-gradient(bottom, #5c96c9 0%, #6bafea 100%);
+	background: -webkit-linear-gradient(bottom, #5c96c9 0%, #6bafea 100%);
+	background: -ms-linear-gradient(bottom, #5c96c9 0%, #6bafea 100%);
+}
+
+.gwt-Button:active {
+	background: linear-gradient(bottom, #5BA7E9 0%, #4889C2 100%);
+	background: -o-linear-gradient(bottom, #5BA7E9 0%, #4889C2 100%);
+	background: -moz-linear-gradient(bottom, #5BA7E9 0%, #4889C2 100%);
+	background: -webkit-linear-gradient(bottom, #5BA7E9 0%, #4889C2 100%);
+	background: -ms-linear-gradient(bottom, #5BA7E9 0%, #4889C2 100%);
+	
+	box-shadow: inset 0 0 2px rgba(0,0,0, .3), 0 1px 0 white;
+}
+
+.gwt-TextBox,
+.gwt-PasswordTextBox {
+	border: 1px solid #a6a6a6;
+	width: 230px;
+	height: 40px;
+	border-radius: 3px;
+	margin-top: 10px;
+	padding-left: 10px;
+	color: #6c6c6c;
+	background: #fcfcfc;
+	outline: none;
+}
+
+.gwt-TextBox:focus,
+.gwt-PasswordTextBox:focus {
+	box-shadow: inset 0 0 2px rgba(0,0,0, .3);
+	color: #a6a6a6;
+	background: white;
+}

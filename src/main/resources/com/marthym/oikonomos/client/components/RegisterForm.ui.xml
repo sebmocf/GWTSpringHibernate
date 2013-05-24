@@ -1,0 +1,21 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:with type="com.marthym.oikonomos.client.resources.WelcomeFormsRessource" field="resource" />
+	<ui:with type="com.marthym.oikonomos.client.i18n.OikonomosConstants" field="constants" />
+	
+	<g:HTMLPanel>
+		<g:FormPanel ui:field="formPanel" styleName="{resource.style.register}">
+			<g:VerticalPanel width="280px" horizontalAlignment="center">
+				<g:HTML wordWrap="true"><h2><ui:text from="{constants.applicationName}"/></h2></g:HTML>
+				<g:TextBox ui:field="email"/>
+				<g:TextBox ui:field="lastname"/>
+				<g:TextBox ui:field="firstname"/>
+				<g:PasswordTextBox ui:field="password"/>
+				<g:PasswordTextBox ui:field="passwordConfirm"/>
+				<g:Button ui:field="btnRegister" text="{constants.register}"/>
+			</g:VerticalPanel>
+		</g:FormPanel>
+		<g:HTML wordWrap="true" ui:field="errorHandler" styleName="{resource.style.error}"/>
+	</g:HTMLPanel>
+</ui:UiBinder> 
